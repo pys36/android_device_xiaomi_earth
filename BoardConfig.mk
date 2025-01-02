@@ -10,6 +10,11 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BUILD_BROKEN_DUP_RULES := true
 
+ifeq ($(TARGET_BOARD_PLATFORM),earth)
+BOARD_SEPOLICY_DIRS += device/xiaomi/earth/sepolicy
+endif
+
+
 # A/B
 AB_OTA_UPDATER := true
 BOARD_USES_RECOVERY_AS_BOOT := true

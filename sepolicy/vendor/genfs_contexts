@@ -8,6 +8,9 @@ genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/wakeup_ena
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/statistics/modalias u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/subsystem/modalias u:object_r:vendor_sysfs_fingerprint:s0
 
+# Graphics
+genfscon sysfs /devices/platform/13040000.mali                                                                                  u:object_r:sysfs_mali:s0
+
 # Extcon
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.0/name u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.1/name u:object_r:sysfs_extcon:s0
@@ -28,3 +31,7 @@ genfscon sysfs /devices/platform/10238000.gce/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11004000.i2c7/i2c-7/7-006a/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input2/wakeup u:object_r:sysfs_wakeup:s0
+
+# Performance
+genfscon sysfs /devices/system/cpu/cpufreq/mtk/.cluster_(min|max)_freq                                                          u:object_r:sysfs_mtk_cpufreq:s0
+genfscon sysfs /kernel/gpu/gpu_(min|max)_clock                                                                                  u:object_r:sysfs_mtk_gpufreq:s0
