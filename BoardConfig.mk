@@ -11,14 +11,9 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     system \
     system_ext \
-    product \
     vendor \
-    vendor_dlkm \
+    product \
     boot \
-    odm \
-    odm_dlkm \
-    persist \
-    vbmeta \
     vbmeta_vendor \
     vbmeta_system
 
